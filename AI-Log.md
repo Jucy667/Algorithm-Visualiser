@@ -3,9 +3,10 @@
 ## ChatGPT
 
 Generated a README template
-    - Changed project name.
-    - Changed project description.
-    - added a Acknowledgments subheading.
-    - Everything apart from the template is not AI generated content.
+- Changed project name.
+- Changed project description.
+- Added an Acknowledgments subheading.
+- Everything apart from the template is not AI generated content.
 
 ## Copilot
+
