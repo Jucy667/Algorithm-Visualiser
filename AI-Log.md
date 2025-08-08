@@ -9,3 +9,5 @@ Generated a README template
 - Everything apart from the template is not AI generated content.
 
 ## Copilot
+
+Fixed an issue where the visualisation disappeared once the list was sorted.
