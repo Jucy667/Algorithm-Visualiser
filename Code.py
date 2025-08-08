@@ -40,14 +40,13 @@ for i in range(length):
         #bubble sort algorithm
         if array[j] > array[j + 1]:
             array[j], array[j + 1] = array[j + 1], array[j]
-            
+
 # Plot the final sorted array so the chart stays visible
 plt.title("Bubble Sort Visualisation")
 plt.bar(x, array, color='grey')
 plt.xlabel("Index of item in list")
 plt.ylabel("Value")
 plt.show()
-
 
 
 #PSUEDO CODE FOR SELECTION SORT
