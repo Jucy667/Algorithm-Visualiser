@@ -9,4 +9,3 @@ Generated a README template
 - Everything apart from the template is not AI generated content.
 
 ## Copilot
-
