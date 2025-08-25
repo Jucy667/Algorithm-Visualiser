@@ -28,7 +28,7 @@ elif spd == 3:
     speed = 0.5
 
 # Generate an array integers from 1 to n then shuffle them
-array = np.random.permutation(np.arange(1, n+1))
+array = np.random.randint(1, 100, size=n)
 
 # Create three copies of the array for each sorting algorithm
 arr1 = array.copy()
@@ -51,12 +51,14 @@ plt.title(f"Selection Sort Visualisation\nComparisons: {selection_comparisons}  
 plt.bar(x, arr2, color='orange')
 plt.xlabel("Index of item in list")
 plt.ylabel("Value")
+plt.figtext(0.5, 0.02, "Selection Sort Time Complexity: O(n^2)", ha="center", fontsize=10, color='orange')
 
 plt.subplot(1,3,3)
 plt.title(f"Insertion Sort Visualisation\nComparisons: {insertion_comparisons}  Swaps: {insertion_swaps}")
 plt.bar(x, arr3, color='limegreen')
 plt.xlabel("Index of item in list")
 plt.ylabel("Value")
+plt.figtext(0.83, 0.02, "Insertion Sort Time Complexity: O(n^2)", ha="center", fontsize=10, color='limegreen')
 plt.pause(0.001)  # Short pause to render
 
 # Bubble Sort visualiser
@@ -69,6 +71,7 @@ for i in range(length):
         plt.bar(x, arr1, color='dodgerblue')
         plt.xlabel("Index of item in list")
         plt.ylabel("Value")
+        plt.figtext(0.17, 0.02, "Bubble Sort Time Complexity: O(n^2)", ha="center", fontsize=10, color='dodgerblue')
         plt.pause(speed)
         plt.cla()
         # Bubble sort algorithm
@@ -83,6 +86,7 @@ plt.bar(x, arr1, color='green')
 plt.xlabel("Index of item in list")
 plt.ylabel("Value")
 plt.pause(0.001)  # Short pause to render
+plt.figtext(0.17, 0.02, "Bubble Sort Time Complexity: O(n^2)", ha="center", fontsize=10, color='dodgerblue')
 
 # Selection Sort Visualiser
 
@@ -113,6 +117,7 @@ plt.bar(x, arr2, color='green')
 plt.xlabel("Index of item in list")
 plt.ylabel("Value")
 plt.pause(0.001)  # Short pause to render
+plt.figtext(0.5, 0.02, "Selection Sort Time Complexity: O(n^2)", ha="center", fontsize=10, color='orange')
 
 # Insertion Sort visualiser
 
@@ -128,6 +133,7 @@ for i in range(1, length):
     while j > 0:
         insertion_comparisons += 1  # Increment the counter for each comparison
         
+        # Insertion sort algorithm
         if arr3[j] < arr3[j-1]:
             arr3[j], arr3[j-1] = arr3[j-1], arr3[j]
             j -= 1
@@ -141,4 +147,5 @@ plt.title(f"Insertion Sort Visualisation\nComparisons: {insertion_comparisons}  
 plt.bar(x, arr3, color='green')
 plt.xlabel("Index of item in list")
 plt.ylabel("Value")
+plt.figtext(0.83, 0.02, "Insertion Sort Time Complexity: O(n^2)", ha="center", fontsize=10, color='limegreen')
 plt.show()
